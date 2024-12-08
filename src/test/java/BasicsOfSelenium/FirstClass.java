@@ -9,12 +9,12 @@ public class FirstClass {
 	public void Launch()
 	{
 		//WebDriver browser = new ChromeDriver();
-		WebDriver browser = new EdgeDriver();
-		browser.manage().window().maximize();
-		//browser.manage().window().minimize();
-
-		browser.get("https://www.facebook.com/");
-		/*browser.navigate().to("https://www.gmail.com/");
+		WebDriver browser = new EdgeDriver(); //open the browser
+		browser.manage().window().maximize(); //maximize
+		//browser.manage().window().minimize(); //minimize
+		
+		browser.get("https://www.facebook.com/"); //Enter url
+		/*browser.navigate().to("https://www.gmail.com/"); //Enter url
 		browser.navigate().back();
 		browser.navigate().forward();
 		browser.navigate().refresh();*/
