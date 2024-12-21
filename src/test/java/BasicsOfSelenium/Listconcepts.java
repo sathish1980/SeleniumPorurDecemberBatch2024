@@ -24,7 +24,7 @@ public class Listconcepts {
 			WebDriverWait wait = new WebDriverWait(browser,Duration.ofSeconds(60));
 			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='j_idt87:country_items']//li[last()]")));
 			
-			List<WebElement> allCountry = browser.findElements(By.xpath("//*[@id='j_idt87:country_items']//li"));
+			List<WebElement> allCountry = browser.findElements(By.cssSelector("[id='j_idt87:country_items']>li"));
 			for(WebElement eachCountry : allCountry)
 			{
 				String actualCountry = eachCountry.getText();

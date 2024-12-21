@@ -16,7 +16,6 @@ public class Checkbox {
 		
 			WebDriver browser = new EdgeDriver(); //open the browser
 			browser.manage().window().maximize(); //maximize
-			
 			browser.get("https://leafground.com/checkbox.xhtml"); //Enter url
 			browser.findElement(By.xpath("//*[@id='j_idt87:j_idt89']//*[starts-with(@class,'ui-chkbox-box')]")).click();
 			Thread.sleep(1000);
