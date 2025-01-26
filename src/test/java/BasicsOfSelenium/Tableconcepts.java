@@ -23,7 +23,7 @@ public class Tableconcepts {
 		String allpages= browser.findElement(By.xpath("//*[@class='ui-paginator-pages']//a[last()]")).getText();
 		int totalPagination = Integer.parseInt(allpages);
 		//for(int j=1;j<=allpages.size();j++)
-		for(int j=1;j<=totalPagination;j++)
+		for(int j=0;j<=totalPagination;j++)
 		{
 			//browser.findElement(By.xpath("//*[@class='ui-paginator-pages']//a["+j+"]")).click();
 			browser.findElement(By.xpath("//*[@aria-label='Next Page']")).click();
