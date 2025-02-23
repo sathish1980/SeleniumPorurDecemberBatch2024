@@ -2,18 +2,20 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
-    <groups>
-      <run>
-        <include name="SIT"/>
-      </run>
-    </groups>
     <classes>
-      <class name="Testng.Firstclass">
+      <class name="Testcases.MakeMyTrip">
         <methods>
-          <include name="BeforeClass"/>
-          <include name="thirdTestcase"/>
+          <include name="FlightSearchWithSameCityTestcase"/>
+          <include name="CloseLoginPopup"/>
+          <include name="teardown"/>
+          <include name="LaunchTheBrowser"/>
+          <include name="FlightSearchWithSameCityTestcasewithDD"/>
+          <include name="LauchTheApplication"/>
+          <include name="ValidFlightSearchTestcase"/>
+          <include name="WriteInReport"/>
+          <include name="ValidFlightSearchTestcaseWithDD"/>
         </methods>
-      </class> <!-- Testng.Firstclass -->
+      </class> <!-- Testcases.MakeMyTrip -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

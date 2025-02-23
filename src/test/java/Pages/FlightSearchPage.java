@@ -22,8 +22,15 @@ public class FlightSearchPage extends WebelementCommons {
 	
 	public void ClosePopup() throws InterruptedException
 	{
+		try
+		{
 		WaitForClickable(Browser,By.xpath("//*[@data-cy='closeModal']"));
 		ClickOnButton(Browser.findElement(By.xpath("//*[@data-cy='closeModal']")));
+		}
+		catch(Exception e)
+		{
+			
+		}
 	}
 	
 	public void SelectFromLocation(String from)
